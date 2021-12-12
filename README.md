@@ -1,4 +1,4 @@
-##A tweening system like DoTween. ##
+##A tweening system like DoTween.
 
 Unlike DoTween, this lets you add predicates on tween operations. 
 
