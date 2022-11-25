@@ -2,6 +2,12 @@
 
 Unlike DoTween, this lets you add predicates on tween operations. 
 
+#### Installation:
+* Add an entry in your manifest.json as follows:
+```C#
+"com.kaiyum.ktween": "https://github.com/kaiyumcg/KTween.git"
+```
+
 
 ```
 var tweener = KTween.To(() => movementSpeed, x => movementSpeed = x, movementSpeed * 2f, 2f, () => { return Input.GetMouseButton(0); });
