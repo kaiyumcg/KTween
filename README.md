@@ -8,6 +8,14 @@ Unlike DoTween, this lets you add predicates on tween operations.
 "com.kaiyum.ktween": "https://github.com/kaiyumcg/KTween.git"
 ```
 
+Since unity does not support git dependencies, you need the following entries as well:
+```C#
+"com.kaiyum.attributeext" : "https://github.com/kaiyumcg/AttributeExt.git",
+"com.kaiyum.unityext": "https://github.com/kaiyumcg/UnityExt.git"
+```
+Add them into your manifest.json file in "Packages\" directory of your unity project, if they are already not in manifest.json file.
+
+#### Usage
 
 ```
 var tweener = KTween.To(() => movementSpeed, x => movementSpeed = x, movementSpeed * 2f, 2f, () => { return Input.GetMouseButton(0); });
@@ -23,11 +31,3 @@ RoadMap:
 * Data type support other than floats. Planned: color, vector, integer and DateTime
 * Easing support
 * Documentation
-
-#### Installation:
-Since unity does not support git dependencies, you need the following entries as well:
-```C#
-"com.kaiyum.attributeext" : "https://github.com/kaiyumcg/AttributeExt.git",
-"com.kaiyum.unityext": "https://github.com/kaiyumcg/UnityExt.git"
-```
-Add them into your manifest.json file in "Packages\" directory of your unity project, if they are already not in manifest.json file.
