@@ -2,7 +2,7 @@
   "name": "com.kaiyum.ktween",
   "displayName": "KTween",
   "version": "1.0.0",
-  "unity": "2020.3",
+  "unity": "2021.3",
   "description": "A Tween engine like DoTween",
   "licence": "MIT",
   "category": "Unity",
